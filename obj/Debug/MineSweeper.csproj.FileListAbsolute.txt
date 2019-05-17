@@ -1,10 +1,10 @@
 D:\Solutions\MineSweeper\bin\Debug\MineSweeper.exe.config
 D:\Solutions\MineSweeper\bin\Debug\MineSweeper.exe
 D:\Solutions\MineSweeper\bin\Debug\MineSweeper.pdb
-D:\Solutions\MineSweeper\obj\Debug\MineSweeper.csprojAssemblyReference.cache
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.Form1.resources
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.Properties.Resources.resources
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.csproj.GenerateResource.cache
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.exe
 D:\Solutions\MineSweeper\obj\Debug\MineSweeper.pdb
+D:\Solutions\MineSweeper\obj\Debug\MineSweeper.Resource1.resources

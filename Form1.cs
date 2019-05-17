@@ -30,19 +30,19 @@ namespace MineSweeper
         private int UnopenedButtons = 100;
         Bitmap[] bitmaps = new Bitmap[]
         {
-            new Bitmap("？.png"),
-            new Bitmap("1.png"),
-            new Bitmap("2.png"),
-            new Bitmap("3.png"),
-            new Bitmap("4.png"),
-            new Bitmap("5.png"),
-            new Bitmap("6.png"),
-            new Bitmap("7.png"),
-            new Bitmap("8.png"),
-            new Bitmap("boom.png"),
-            new Bitmap("flag.png"),
-            new Bitmap("empty.png"),
-            new Bitmap("opened.png")
+            
+            new Bitmap(Resource1.suspected),
+            new Bitmap(Resource1._1),
+            new Bitmap(Resource1._2),
+            new Bitmap(Resource1._3),
+            new Bitmap(Resource1._4),
+            new Bitmap(Resource1._5),
+            new Bitmap(Resource1._6),
+            new Bitmap(Resource1._7),
+            new Bitmap(Resource1._8),
+            new Bitmap(Resource1.boom),
+            new Bitmap(Resource1.flag),
+            new Bitmap(Resource1.empty),
         };
 
         private void ButtonDoubleClick(object sender, MouseEventArgs e)
@@ -77,7 +77,6 @@ namespace MineSweeper
                     buttons[Position].Image = bitmaps[buttons[Position].AroundNumber];
                     buttons[Position].IsClicked = true;
                     buttons[Position].Status = Enumbuttonstatus.Opened;
-                    //buttons[Position].Image = bitmaps[12];
                     --UnopenedButtons;
                 }
                 else if (buttons[Position].AroundNumber == 0)
@@ -91,7 +90,7 @@ namespace MineSweeper
             }
         }
 
-        //广度遍历算法
+        //广度优先遍历，遍历所有相邻、周围雷数为0、未被翻开的方块
         private void BreadthFirstSearch(int Position)
         {
             Queue<int> AuxiliaryQueue = new Queue<int>();
@@ -117,7 +116,6 @@ namespace MineSweeper
                             buttons[Around].Image = bitmaps[buttons[Around].AroundNumber];
                             buttons[Around].IsClicked = true;
                             buttons[Around].Status = Enumbuttonstatus.Opened;
-                            //buttons[Around].Image = bitmaps[12];
                             --UnopenedButtons;
                         }
                     }
